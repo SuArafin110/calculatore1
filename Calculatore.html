@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="Arafin.css">
+</head>
+<body>
+<form action="" name="counter">
+    <input type="text" name="screen" disabled>
+    <hr>
+    <input type="button" value="&radic;" onclick="counter.screen.value=Math.sqrt(counter.screen.value)">
+    <input type="button" value="CE" onclick="counter.screen.value=''">
+    <input type="button" value="C" onclick="counter.screen.value=''">
+    <input type="button" value="&larr;" onclick="counter.screen.value=counter.screen.value.slice(0,-1)">
+    <br>
+    <input type="button" value="7" onclick="counter.screen.value+='7'">
+    <input type="button" value="8"  onclick="counter.screen.value+='8'">
+    <input type="button" value="9"  onclick="counter.screen.value+='9'">
+    <input type="button" value="+"  onclick="counter.screen.value+='+'">
+    <br>
+    <input type="button" value="4"  onclick="counter.screen.value+='4'">
+    <input type="button" value="5"  onclick="counter.screen.value+='5'">
+    <input type="button" value="6"  onclick="counter.screen.value+='6'">
+    <input type="button" value="-"  onclick="counter.screen.value+='-'">
+    <br>
+    <input type="button" value="1"  onclick="counter.screen.value+='1'">
+    <input type="button" value="2"  onclick="counter.screen.value+='2'">
+    <input type="button" value="3"  onclick="counter.screen.value+='3'">
+    <input type="button" value="*"  onclick="counter.screen.value+='*'">
+    <br>
+    <input type="button" value="0"  onclick="counter.screen.value+='0'">
+    <input type="button" value="."  onclick="counter.screen.value+='.'">
+    <input type="button" value="=" onclick="counter.screen.value=eval(counter.screen.value)">
+    <input type="button" value="/"  onclick="counter.screen.value+='/'">
+</form>
+</body>
+</html>
